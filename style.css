@@ -1,0 +1,19 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	min-height: 100vh;
+	font-family: sans;
+	width: max(100%, max-content);
+}
+
+body {
+	background-image: url("./img/logo-large.png");
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
+}
