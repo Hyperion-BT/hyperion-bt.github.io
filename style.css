@@ -24,7 +24,7 @@ html, body {
 html {
 	background-image: url("./img/bg-tile.png");
 	background-repeat: repeat repeat;
-	line-height: 2rem;
+	line-height: 1.5rem;
 }
 
 body {
@@ -35,23 +35,19 @@ body {
 	justify-content: space-between;
 }
 
-body > div.outer {
+body > .outer {
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 }
 
-body > div.outer > div {
+body > .outer > div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 	width: calc(100% - var(--dgap));
 	max-width: 800px;
-}
-
-h1, h2, h3 {
-	/*font-weight: normal;*/
 }
 
 h2, h3 {
@@ -64,7 +60,7 @@ a {
 	text-decoration: none;
 }
 
-div.outer div {
+.outer div {
 	padding: var(--gap);
 }
 
@@ -89,12 +85,9 @@ div.outer div {
 	position: relative;
 }
 
-#about::before {
-	content: " ";
-	position: absolute;
-	top: 0;
-	bottom: 0;
-	width: 100vw;
+#about p {
+	max-width: var(--width);
+	padding-left: var(--gap);
 }
 
 #offer {
@@ -127,6 +120,7 @@ div.outer div {
 	display: flex;
 	width: 100%;
 	justify-content: flex-end;
+	margin-top: var(--gap);
 }
 
 #offer .links > a {
@@ -152,8 +146,6 @@ div.outer div {
 	width: 20px;
 	height: 20px;
 	margin-left: 2px;
-	/*position: absolute;
-	right: -10px;*/
 }
 
 #offer .links > a:last-child {
@@ -166,6 +158,7 @@ div.outer div {
 
 #team {
 	padding-bottom: var(--dgap);
+	padding-top: var(--dgap);
 }
 
 #team a {
@@ -183,7 +176,7 @@ div.outer div {
 #team a > img {
 	width: 250px;
 	height: 250px;
-	border-radius: var(--bradius);
+	border-radius: var(--bradius) var(--bradius) 0 0;
 }
 
 #team a > div {
@@ -193,10 +186,10 @@ div.outer div {
 
 #social {
 	position: fixed;
+	bottom: 70px;
 	display: flex;
 	flex-direction: column;
 	right: var(--hgap);
-	bottom: 0;
 }
 
 #social img {
@@ -206,4 +199,15 @@ div.outer div {
 
 #social a {
 	margin-bottom: var(-hgap);
+}
+
+footer {
+	background-color: #313131;
+	color: lightgrey;
+	font-size: 0.8rem;
+	height: 70px;
+	padding-left: var(--gap);
+	flex-direction: row !important;
+	align-items: center;
+	justify-content: flex-start;
 }
