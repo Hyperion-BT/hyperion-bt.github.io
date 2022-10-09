@@ -75,8 +75,10 @@ p {
 }
 
 #banner img {
+	display: block;
 	height: auto;
 	width: var(--width);
+	max-width: calc(100vw - 80px);
 }
 
 .outer.about, .outer.team {
