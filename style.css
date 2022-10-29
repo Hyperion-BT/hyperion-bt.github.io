@@ -14,7 +14,7 @@
 
 html, body {
 	min-height: 100vh;
-	font-family: sans;
+	font-family: Arial, sans;
 	font-size: 20px;
 	width: max(100%, max-content);
 	color: white;
