@@ -13,6 +13,11 @@
 			document.getElementById("current-url").innerHTML = currentUrl;
 
 			const newUrl = currentUrl.toLowerCase();
+
+			if (currentUrl.contains("Helios")) {
+				window.location = newUrl;
+			}
+
 			const link = document.getElementById("new-url");
 			link.setAttribute("href", newUrl);
 		</script>
