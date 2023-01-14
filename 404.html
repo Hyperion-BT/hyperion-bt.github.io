@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Hyperion Blockchain Tech</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<p>Couldn't find <span id="current-url"/></p>
+		<p>Maybe it was moved <a id="new-url" href="">here</a></p>
+		<script>
+			const currentUrl = window.location.href;
+			document.getElementById("current-url").innerHTML = currentUrl;
+
+			const newUrl = currentUrl.toLowerCase();
+			const link = document.getElementById("new-url");
+			link.setAttribute("href", newUrl);
+		</script>
+	</body>
+</html>
